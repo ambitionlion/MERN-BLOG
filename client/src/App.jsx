@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import FooterCom from "./components/Footer";
 import Header from "./components/Header";
 import About from "./pages/About";
 import Dashboard from "./pages/Dashboard";
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/sign-in" element={<Signin />} />
       </Routes>
+      <FooterCom />
     </BrowserRouter>
   );
 }
